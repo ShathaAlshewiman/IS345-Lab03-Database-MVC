@@ -8,17 +8,26 @@ All data, database records, and scenarios used in this lab are not real and are 
 
 # Technologies Used:
 ASP.NET MVC
+
 C#
+
 SQL Server (LocalDB / SQL Express)
+
 Razor Views
+
 ADO.NET / MVC Models
+
 Visual Studio
 
 # Learning Outcomes
 Creating and managing databases and tables
+
 Connecting web applications to a database
+
 Performing insert, edit, and retrieve operations
+
 Handling database connection and schema errors
+
 Applying the MVC pattern with database integration
 
 # Educational Disclaimer
