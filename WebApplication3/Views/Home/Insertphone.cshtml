@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Insert phone";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="insertphone">
+    <div class="form-group">
+        <label class="control-label">name</label>
+        <input name="na" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Number</label>
+        <input name="nu"  type="number" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="insert" class="btn btn-default" />
+    </div>
+    <p style="color:green"> @ViewData["message"]</p>
+</form>

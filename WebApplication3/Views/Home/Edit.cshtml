@@ -1,0 +1,34 @@
+@model WebApplication3.Models.client
+
+<h2>Edit</h2>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">name<input asp-for="name" class="form-control"></div>
+            <div class="form-group">age<input asp-for="age" class="form-control"></div>
+            Job:<select class="form-control" asp-for="job">
+                <option value="HighSchool">teacher</option>
+                <option value="University">doctor</option>
+                <option value="University">engineer</option>
+            </select>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label> <input type="radio" asp-for="gender" value="male"> Male</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="radio" asp-for="gender" value="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label><input type="checkbox" asp-for="married"> married </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-outline-warning">
+            </div>
+        </form>
+    </div>
+</div>
+<h2>@ViewData["Message"]</h2>

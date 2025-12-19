@@ -1,0 +1,37 @@
+@model IEnumerable<WebApplication3.Models.client>
+@{
+    ViewData["Title"] = "GetClient";
+}
+<p>
+    <a asp-action="registration">Create New Customer</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>   
+        <th> Name </th>
+        <th> Age</th>
+        <th> Job</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.job)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> 
+               
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
